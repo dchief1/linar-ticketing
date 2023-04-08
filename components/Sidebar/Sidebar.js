@@ -17,7 +17,7 @@ const Sidebar = ({ children }) => {
     <div className="">
       <div
         className="
-          fixed h-screen py-6  bg-white shadow-lg shadow-[#ED9534]
+          fixed h-screen py-12  bg-white shadow-lg shadow-[#ED9534]
           flex-col gap-8 z-20 md:flex hidden w-full px-6
           "
         style={{
@@ -47,7 +47,7 @@ const Sidebar = ({ children }) => {
         })}
         <button
           className={`
-        flex  items-center  font-normal  rounded-r-full text-white gap-2 px-6
+        flex  items-center  font-normal py-2 rounded-r-full text-white gap-2 px-6
         ${isOpen ? 'bg-[#ED9534]' : 'bg-transparent, rounded-none'}
         
         `}
@@ -63,7 +63,7 @@ const Sidebar = ({ children }) => {
       </div>
       <main
         className={`
-        w-full shrink-0 overflow-auto
+        w-full shrink-0 overflow-auto bg-[#fff6eb]
         ${isOpen ? 'md:pl-[230px]' : 'md:pl-[60px]'}
         `}
         style={{ transition: 'all .5s' }}

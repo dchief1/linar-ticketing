@@ -1,4 +1,7 @@
 import Head from 'next/head';
+import HomeHead from '../components/DashboardPage/HomeHead';
+import Banner from '@/components/DashboardPage/Banner';
+import HomeDetails from '@/components/DashboardPage/HomeDetails';
 
 export default function Home() {
   return (
@@ -9,6 +12,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <HomeHead />
+      <Banner />
+      <HomeDetails />
     </>
   );
 }

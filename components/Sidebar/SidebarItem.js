@@ -16,7 +16,7 @@ const SidebarItem = ({ item, isOpen }) => {
         <div
           onClick={toggleClass}
           className={`
-            flex  items-center  font-normal px-6 rounded-r-full 
+            flex  items-center  font-normal px-6 py-2 rounded-r-full 
             ${isOpen ? 'bg-[#ED9534]' : 'bg-transparent, rounded-none'}
             
             `}
@@ -24,7 +24,7 @@ const SidebarItem = ({ item, isOpen }) => {
           <span
             className={`
             flex gap-2  items-center  text-xl text-white
-            ${router.pathname == item.path ? 'text-[ED7C00] ' : 'text-[ED9534]'}
+            ${router.pathname == item.path ? 'bg-[ED7C00]  ' : 'bg-[ED9534]'}
             `}
           >
             {item.icon && (
